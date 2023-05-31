@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.icon_container{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.card_details {
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 250px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card_details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  background-color: #0167BD;
+  z-index: -1;
+}
+
+
+.card_details h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card_details h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card_details h4 {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card_details a {
+  color: blue;
+  text-decoration: none;
+}
+
+.card_details a:hover {
+  text-decoration: underline;
+}
+.social_icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social_icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.social_icons a:hover {
+  background-color: #0056b3;
+}
